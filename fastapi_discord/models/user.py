@@ -6,6 +6,7 @@ from pydantic import BaseModel
 class User(BaseModel):
     id: str
     username: str
+    global_name: str
     discriminator: str
     avatar: Optional[str]
     avatar_url: Optional[str] = "https://cdn.discordapp.com/embed/avatars/1.png"
