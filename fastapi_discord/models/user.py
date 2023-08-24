@@ -8,10 +8,10 @@ class User(BaseModel):
     username: str
     discriminator: str
     avatar: Optional[str]
-    avatar_url: Optional[str]
+    avatar_url: Optional[str] = "https://cdn.discordapp.com/embed/avatars/1.png"
     locale: str
-    email: Optional[str]
-    bot: Optional[bool]
+    email: Optional[str] = None
+    bot: Optional[bool] = None
     mfa_enabled: bool
     flags: int
     premium_type: Optional[int]
